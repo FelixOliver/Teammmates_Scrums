@@ -1,0 +1,95 @@
+{
+  "accounts": {
+  	"SCDetailsUiT.instr": {
+  	  "googleId": "SCDetailsUiT.instr",
+  	  "name": "Instructor",
+  	  "isInstructor": true,
+  	  "email": "tmms.test@gmail.tmt",
+  	  "institute": "TEAMMATES Test Institute 1"
+  	},
+    "SCDetailsUiT.coord": {
+      "googleId": "SCDetailsUiT.coord",
+      "name": "Instructor",
+      "isInstructor": true,
+      "email": "tmms.coord@gmail.tmt",
+      "institute": "TEAMMATES Test Institute 1"
+    },
+    "SCDetailsUiT.alice": {
+      "googleId": "SCDetailsUiT.alice",
+      "email": "SCDetailsUiT.alice@gmail.tmt",
+      "name": "Alice Betsy",
+      "isInstructor": false,
+      "institute": "TEAMMATES Test Institute 1"
+    },
+    "SCDetailsUiT.charlie": {
+      "googleId": "SCDetailsUiT.charlie",
+      "email": "SCDetailsUiT.charlie@gmail.tmt",
+      "name": "Charlie Davis",
+      "institute": "TEAMMATES Test Institute 1"
+    },
+    "SCDetailsUiT.danny": {
+      "googleId": "SCDetailsUiT.danny",
+      "email": "SCDetailsUiT.danny@gmail.tmt",
+      "name": "Danny Engrid",
+      "institute": "TEAMMATES Test Institute 1"
+    }
+  },
+
+  "courses": {
+    "SCDetailsUiT.CS2104": {
+      "id": "SCDetailsUiT.CS2104",
+      "name": "Programming Language Concepts",
+      "isArchived": false
+    }
+  },
+  
+  "instructors": {
+    "SCDetailsUiT.instr": {
+      "googleId": "SCDetailsUiT.instr",
+      "courseId": "SCDetailsUiT.CS2104",
+      "name": "Teammates Test",
+      "email": "SCDetailsUiT.instr@gmail.tmt",
+      "role":"Co-owner",
+      "isDisplayedToStudents":true,
+      "displayedName":"Instructor",
+      "instructorPrivilegesAsText": "{\n  \"courseLevel\": {\n    \"canviewstudentinsection\": true,\n    \"cangivecommentinsection\": true,\n    \"cansubmitsessioninsection\": true,\n    \"canmodifysessioncommentinsection\": true,\n    \"canmodifycommentinsection\": true,\n    \"canmodifycourse\": true,\n    \"canviewsessioninsection\": true,\n    \"canmodifysession\": true,\n    \"canviewcommentinsection\": true,\n    \"canmodifystudent\": true,\n    \"canmodifyinstructor\": true\n  },\n  \"sectionLevel\": {},\n  \"sessionLevel\": {}\n}"
+    },
+    "SCDetailsUiT.coord": {
+      "googleId": "SCDetailsUiT.coord",
+      "courseId": "SCDetailsUiT.CS2104",
+      "name": "Teammates Coord",
+      "email": "SCDetailsUiT.coord@gmail.tmt",
+      "role":"Co-owner",
+      "isDisplayedToStudents":false,
+      "displayedName":"Instructor",
+      "instructorPrivilegesAsText": "{\n  \"courseLevel\": {\n    \"canviewstudentinsection\": true,\n    \"cangivecommentinsection\": true,\n    \"cansubmitsessioninsection\": true,\n    \"canmodifysessioncommentinsection\": true,\n    \"canmodifycommentinsection\": true,\n    \"canmodifycourse\": true,\n    \"canviewsessioninsection\": true,\n    \"canmodifysession\": true,\n    \"canviewcommentinsection\": true,\n    \"canmodifystudent\": true,\n    \"canmodifyinstructor\": true\n  },\n  \"sectionLevel\": {},\n  \"sessionLevel\": {}\n}"
+    }
+  },
+  
+  "students": {
+    "SCDetailsUiT.alice": {
+      "googleId": "SCDetailsUiT.alice",
+      "email": "SCDetailsUiT.alice@gmail.tmt",
+      "course": "SCDetailsUiT.CS2104",
+      "name": "Alice Betsy",
+      "comments": "This student's name is Alice Betsy",
+      "team": "Team 1"
+    },
+    "SCDetailsUiT.benny": {
+      "googleId": "SCDetailsUiT.benny",
+      "email": "SCDetailsUiT.benny@gmail.tmt",
+      "course": "SCDetailsUiT.CS2104",
+      "name": "Benny Charles",
+      "comments": "This student's name is Benny Charles",
+      "team": "Team 1"
+    },
+    "SCDetailsUiT.charlie": {
+      "googleId": "SCDetailsUiT.charlie",
+      "email": "SCDetailsUiT.charlie@gmail.tmt",
+      "course": "SCDetailsUiT.CS2104",
+      "name": "Charlie Davis",
+      "comments": "This student's name is Charlie Davis",
+      "team": "Team 2"
+    }
+  }
+}

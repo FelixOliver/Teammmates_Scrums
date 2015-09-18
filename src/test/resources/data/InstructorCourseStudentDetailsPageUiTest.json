@@ -1,0 +1,85 @@
+{
+  "accounts": {
+    "CCSDetailsUiT.instr": {
+      "googleId": "CCSDetailsUiT.instr",
+      "name": "Teammates Test",
+      "isInstructor": true,
+      "email": "CCSDetailsUiT.instr@gmail.tmt",
+      "institute": "TEAMMATES Test Institute 1"
+    },
+    "CCSDetailsUiT.Helper": {
+      "googleId": "CCSDetailsUiT.Helper",
+      "name": "Teammates Test",
+      "isInstructor": true,
+      "email": "CCSDetailsUiT.Helper@gmail.tmt",
+      "institute": "TEAMMATES Test Institute 1"
+    },
+    "registeredStudent": {
+      "googleId": "CCSDetailsUiT.jose.tmms",
+      "email": "CCSDetailsUiT.jose.tmms@gmail.tmt",
+      "name": "José Gómez",
+      "isInstructor":"false",
+      "institute":"TEAMMATES Test Institute 5",
+      "studentProfile": {
+            "googleId":"CCSDetailsUiT.jose.tmms",
+            "shortName":"Jose",
+            "institute":"TEAMMATES Test Institute 7",
+            "email":"jose@e.tmt",
+            "nationality":"Laosian",
+            "gender":"other",
+            "moreInfo":"This is a lot of info...",
+            "pictureKey":""
+      }
+    }
+  },
+
+  "courses": {
+    "CCSDetailsUiT.CS2104": {
+      "id": "CCSDetailsUiT.CS2104",
+      "name": "Programming Language Concepts",
+      "isArchived": false
+    }
+  },
+
+  "instructors": {
+    "CCSDetailsUiT.instr": {
+      "googleId": "CCSDetailsUiT.instr",
+      "courseId": "CCSDetailsUiT.CS2104",
+      "name": "Teammates Test",
+      "email": "CCSDetailsUiT.instr@gmail.tmt",
+      "role":"Co-owner",
+      "isDisplayedToStudents":true,
+      "displayedName":"Instructor",
+      "instructorPrivilegesAsText": "{\n  \"courseLevel\": {\n    \"canviewstudentinsection\": true,\n    \"cangivecommentinsection\": true,\n    \"cansubmitsessioninsection\": true,\n    \"canmodifysessioncommentinsection\": true,\n    \"canmodifycommentinsection\": true,\n    \"canmodifycourse\": true,\n    \"canviewsessioninsection\": true,\n    \"canmodifysession\": true,\n    \"canviewcommentinsection\": true,\n    \"canmodifystudent\": true,\n    \"canmodifyinstructor\": true\n  },\n  \"sectionLevel\": {},\n  \"sessionLevel\": {}\n}"
+    },
+    "CCSDetailsUiT.Helper": {
+      "googleId": "CCSDetailsUiT.Helper",
+      "courseId": "CCSDetailsUiT.CS2104",
+      "name": "Teammates Test",
+      "email": "CCSDetailsUiT.Helper@gmail.tmt",
+      "role":"Helper",
+      "isDisplayedToStudents":true,
+      "displayedName":"Instructor",
+      "instructorPrivilegesAsText": "{\n  \"courseLevel\": {\n    \"canviewstudentinsection\": true,\n    \"cangivecommentinsection\": false,\n    \"cansubmitsessioninsection\": false,\n    \"canmodifysessioncommentinsection\": false,\n    \"canmodifycommentinsection\": false,\n    \"canmodifycourse\": false,\n    \"canviewsessioninsection\": false,\n    \"canmodifysession\": false,\n    \"canviewcommentinsection\": false,\n    \"canmodifystudent\": false,\n    \"canmodifyinstructor\": false\n  },\n  \"sectionLevel\": {},\n  \"sessionLevel\": {}\n}"
+    }
+  },
+  
+  "students": {
+    "registeredStudent": {
+      "googleId": "CCSDetailsUiT.jose.tmms",
+      "email": "CCSDetailsUiT.jose.tmms@gmail.tmt",
+      "course": "CCSDetailsUiT.CS2104",
+      "name": "José Gómez",
+      "comments": "This student's name is José Gómez",
+      "team": "Team 1"
+    },
+    "unregisteredStudent": {
+      "googleId": "",
+      "email": "benny.c.tmms@gmail.tmt",
+      "course": "CCSDetailsUiT.CS2104",
+      "name": "Benny Charles",
+      "comments": "This student's name is Benny Charles",
+      "team": "Team 1"
+    }
+  }
+}

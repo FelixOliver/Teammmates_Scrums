@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #TEAMMATES Developer Web Site
 
 TEAMMATES is a free online tool for managing peer evaluations and other 
@@ -76,6 +77,10 @@ TEAMMATES team wishes to thank the following invaluable contributions.
 
 ##License
 TEAMMATES is released under GPLv2
+=======
+# Teammmates_Scrums
+Proyecto del curso de Ingenieria de Software II de la Escuela Profesional en Ciencia de la Computacion - UNSA
+>>>>>>> 21f18547ce9f237743733f3fd2bdb28f9d2aa145
 =======
 # Teammmates_Scrums
 Proyecto del curso de Ingenieria de Software II de la Escuela Profesional en Ciencia de la Computacion - UNSA

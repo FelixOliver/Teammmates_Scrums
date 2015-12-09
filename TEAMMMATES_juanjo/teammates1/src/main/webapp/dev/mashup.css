@@ -1,0 +1,12 @@
+.full-width {
+    width: 100%;
+}
+
+.pageinfo {
+    font-size: 14px;
+    color: red;
+}
+
+.hr-bold {
+    border: 2px red solid;
+}

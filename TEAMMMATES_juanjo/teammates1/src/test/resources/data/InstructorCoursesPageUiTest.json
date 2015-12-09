@@ -1,0 +1,74 @@
+{
+  "accounts": {
+   "instructorWithCourses":{
+      	"googleId": "CCAddUiTest.instructor",
+      	"name":	"Teammates Demo Instr",
+      	"email": "CCAddUiTest.instructor@gmail.tmt",
+      	"isInstructor": true,
+      	"institute": "TEAMMATES Test Institute with Long Long Long Name"
+  	},
+  	"instructorWithoutCourses":{
+      	"googleId": "CCAddUiTest.instr2",
+      	"name":	"Teammates Demo Instr 2",
+      	"email": "CCAddUiTest.instr2@gmail.tmt",
+      	"isInstructor": true,
+      	"institute": "TEAMMATES Test Institute with Long Long Long Name"
+  	},
+  	"OtherInstructorWithoutCourses":{
+      	"googleId": "CCAddUiTest.instr3",
+      	"name":	"Teammates Demo Instr 3",
+      	"email": "CCAddUiTest.instr3@gmail.tmt",
+      	"isInstructor": true,
+      	"institute": "TEAMMATES Test Institute with Long Long Long Name"
+  	}
+  },
+  
+    
+  "courses":{
+      "CS1101": {
+        "id": "CCAddUiTest.CS1101",
+        "name": "Programming Methodology",
+        "isArchived" : false
+      },
+      "CS2104": {
+      	"id": "CCAddUiTest.CS2104",
+      	"name": "Programming Language Concept",
+      	"isArchived" : false
+      }
+  },
+
+  "instructors": {
+  	"instructor1CS1101": { 
+      "googleId": "CCAddUiTest.instructor", 
+      "courseId":"CCAddUiTest.CS1101",
+      "name": "Teammates Demo Instr",
+      "email": "CCAddUiTest.instructor@gmail.tmt",
+      "role":"Co-owner",
+      "isDisplayedToStudents":true,
+      "displayedName":"Instructor",
+      "instructorPrivilegesAsText": "{\n  \"courseLevel\": {\n    \"canviewstudentinsection\": true,\n    \"cangivecommentinsection\": true,\n    \"cansubmitsessioninsection\": true,\n    \"canmodifysessioncommentinsection\": true,\n    \"canmodifycommentinsection\": true,\n    \"canmodifycourse\": false,\n    \"canviewsessioninsection\": true,\n    \"canmodifysession\": true,\n    \"canviewcommentinsection\": true,\n    \"canmodifystudent\": false,\n    \"canmodifyinstructor\": true\n  },\n  \"sectionLevel\": {},\n  \"sessionLevel\": {}\n}"
+    },
+ 	"instructor2CS1101": { 
+      "googleId": "CCAddUiTest.instr3", 
+      "courseId":"CCAddUiTest.CS1101",
+      "isArchived":"false",
+      "name": "Teammates Demo Instr 3",
+      "email": "CCAddUiTest.instr3@gmail.tmt",
+      "role":"Co-owner",
+      "isDisplayedToStudents":true,
+      "displayedName":"Instructor",
+      "instructorPrivilegesAsText": "{\n  \"courseLevel\": {\n    \"canviewstudentinsection\": true,\n    \"cangivecommentinsection\": true,\n    \"cansubmitsessioninsection\": true,\n    \"canmodifysessioncommentinsection\": true,\n    \"canmodifycommentinsection\": true,\n    \"canmodifycourse\": true,\n    \"canviewsessioninsection\": true,\n    \"canmodifysession\": true,\n    \"canviewcommentinsection\": true,\n    \"canmodifystudent\": true,\n    \"canmodifyinstructor\": true\n  },\n  \"sectionLevel\": {},\n  \"sessionLevel\": {}\n}"
+    },
+    "instructor1CS2104": { 
+      "googleId": "CCAddUiTest.instructor", 
+      "courseId":"CCAddUiTest.CS2104",
+      "name": "Teammates Demo Instr",
+      "email": "CCAddUiTest.instructor@gmail.tmt",
+      "role":"Co-owner",
+      "isDisplayedToStudents":true,
+      "displayedName":"Instructor",
+      "instructorPrivilegesAsText": "{\n  \"courseLevel\": {\n    \"canviewstudentinsection\": true,\n    \"cangivecommentinsection\": true,\n    \"cansubmitsessioninsection\": true,\n    \"canmodifysessioncommentinsection\": true,\n    \"canmodifycommentinsection\": true,\n    \"canmodifycourse\": true,\n    \"canviewsessioninsection\": true,\n    \"canmodifysession\": true,\n    \"canviewcommentinsection\": true,\n    \"canmodifystudent\": true,\n    \"canmodifyinstructor\": true\n  },\n  \"sectionLevel\": {},\n  \"sessionLevel\": {}\n}"
+    }
+  }
+  
+}

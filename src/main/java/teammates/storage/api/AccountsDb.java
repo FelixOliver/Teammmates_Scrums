@@ -123,6 +123,33 @@ public class AccountsDb extends EntitiesDb {
         
         return instructorsAccountData;
     }
+    
+    public boolean VerifyFalseOnGetInstructorAccountsForEmail(String email) {
+        Query q = getPM().newQuery(Account.class);
+        q.setFilter("isInstructor == false");
+        
+        @SuppressWarnings("unchecked")
+        List<Account> accountsList = (List<Account>) q.execute();
+        
+        List<AccountAttributes> instructorsAccountData = new ArrayList<AccountAttributes>();
+                
+        for (Account a : accountsList) {
+            instructorsAccountData.add(new AccountAttributes(a));
+        }
+        
+                
+        
+        boolean aux = false;
+        for(AccountAttributes i: instructorsAccountData){
+            System.out.println("account que isInstructor sean FALSE");
+            System.out.println(i.getEmail());
+            if(i.getEmail()==email)
+                aux = true;
+        }
+        
+        return aux;
+    }
+    
 
     /**
      * Preconditions: 

@@ -613,6 +613,12 @@ public class StudentsDb extends EntitiesDb {
         StudentAttributes studentToGet = (StudentAttributes) entity;
         return getStudentForEmail(studentToGet.course, studentToGet.email);
     }
+    public int gettotalstudent(){
+        
+        List<StudentAttributes> estudiantes=getAllStudents();
+        int temp=estudiantes.size();
+        return temp;
+    }
     
 
 }

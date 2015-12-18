@@ -10,6 +10,9 @@
     <title>TEAMMATES[Request An Account] - Online Peer Feedback/Evaluation System for Student Team Projects<</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <script type="text/javascript" src="/js/googleAnalytics.js"></script>
+    
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"/>
+     <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" type="text/css"/>
 </head>
 
 <body>
@@ -51,8 +54,74 @@
             </h1>
             
             <div id="contentHolder">
-               <iframe src="https://spreadsheets.google.com/embeddedform?formkey=dDNsQmU4QXVYTVRhMjA2dEJWYW82Umc6MQ" width="760px" height="880px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
-            </div>  
+               
+               
+               <form action="/sendemail" method = "POST">
+               <br>     
+                Request for an account using this form if you want to use TEAMMATES to manage peer evaluations and/or other feedback paths of your students
+                This form is for *instructors only*. Students do not need TEAMMATES accounts to use TEAMMATES. 
+                <br><br>  
+                *Obligatorio
+                <br>  
+                 Your full name *
+                 <br>
+                 This is the name that will be shown to your students. You may include salutation (Dr. Prof. etc.)
+                 <br>  
+                                        
+                    <div class="form-group">
+                        <input type="text" class="form" name="fullname" id="fullname" value="">
+                    </div>
+                <br>  
+                 University/school/institution *
+                 <br>
+                 Please give full name of the university    
+                 <br>   
+                     <div class="form-group">
+                        <input type="text" class="form" name="university" id="university" value="">
+                    </div>
+                 <br>     
+                 Esta pregunta es obligatoria.
+                 <br>
+                 Country *
+                 <br>
+                 Your university/institution is based in which country?   
+                 <br>    
+                     <div class="form-group">
+                        <input type="text" class="form" name="country" id="country" value="">
+                    </div>
+                 <br>   
+                 URL of your home page (if any)
+                 <br>   
+                     <div class="form-group">
+                        <input type="text" class="form" name="url" id="url" value="">
+                    </div>
+                 <br>     
+                    
+                 "Official" email address *
+                 <br>
+                 Please use the email address given to you by your school/university   
+                 <br>   
+                     <div class="form-group">
+                        <input type="text" class="form" name="email" id="email" value="">
+                    </div>
+                <br>  
+                 Any other comments/queries 
+                 <br>
+                            
+                    <div class="form-group">
+                    <textarea class="form-control" name="comentario" id="comentario" style="width: 300px; height: 150px;" ></textarea>             
+                    </div>         
+                 <br> 
+                        
+                    <button type="submit" class="btn btn-primary">Send</button>             
+                 
+                                  
+               </form>
+               
+                          
+           </div>  
+            
+            
         </div>
     </div>
     

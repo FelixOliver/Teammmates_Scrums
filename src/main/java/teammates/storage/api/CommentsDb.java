@@ -503,6 +503,14 @@ public class CommentsDb extends EntitiesDb {
         }
         return list;
     }
+    public int gettodocomentario()
+    {
+        List<CommentAttributes> comen=getAllComments();
+        int temp=comen.size();
+        return temp;
+        
+    }
+                                
     
     private List<Comment> getAllCommentEntities() {
         

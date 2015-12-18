@@ -178,4 +178,10 @@ public class CoursesDb extends EntitiesDb {
 
         return courses;
     }
+    public int gettotalcourses()
+    {
+        List<CourseAttributes> cur=getAllCourses();
+        int temp=cur.size();
+        return temp;
+    }
 }

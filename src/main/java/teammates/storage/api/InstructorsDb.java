@@ -209,6 +209,7 @@ public class InstructorsDb extends EntitiesDb{
         List<Instructor> instructorList = getInstructorEntitiesForEmail(email);
         
         List<InstructorAttributes> instructorDataList = new ArrayList<InstructorAttributes>();
+        
         for (Instructor i : instructorList) {
             if(!JDOHelper.isDeleted(i)){
                 instructorDataList.add(new InstructorAttributes(i));
@@ -217,6 +218,38 @@ public class InstructorsDb extends EntitiesDb{
         
         return instructorDataList;
     }
+    
+    public boolean comprobarInstructorExiste (String email){
+        
+       // List<InstructorAttributes> listInst = new ArrayList<InstructorAttributes>();
+        
+        Assumption.assertNotNull(Const.StatusCodes.DBLEVEL_NULL_INPUT, email);
+        
+        List<Instructor> instructorList = getInstructorEntitiesForEmail(email);
+        
+        List<InstructorAttributes> instructorDataList = new ArrayList<InstructorAttributes>();
+        
+        for (Instructor i : instructorList) {
+            if(!JDOHelper.isDeleted(i)){
+                instructorDataList.add(new InstructorAttributes(i));
+            }
+        }
+                
+        
+        boolean aux = false;
+        for(InstructorAttributes j : instructorDataList){
+            
+            System.out.println("instructor que tengan null course");
+            System.out.println(j.getEmail());
+            
+            if(j.googleId != null){
+                aux=true;
+                
+            }
+        }
+        return aux;
+    }
+    
     
     /**
      * Preconditions: <br>
@@ -588,7 +621,11 @@ public class InstructorsDb extends EntitiesDb{
             
         return getInstructorEntityForEmail(instructorToGet.courseId, instructorToGet.email);
     }
-    
+    public int gettotalinstructores(){
+        List<InstructorAttributes> instructores=getAllInstructors();
+        int temp=instructores.size();
+        return temp;
+     }
 
 }
 
